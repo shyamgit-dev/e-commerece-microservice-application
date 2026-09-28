@@ -1,10 +1,37 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# ==========================================
+# Build Outputs & Compiled Binaries
+# ==========================================
+**/target/
+*.class
+*.jar
+*.war
+*.ear
 
-### STS ###
+# ==========================================
+# Application Logs (All Microservices)
+# ==========================================
+**/logs/
+*.log
+*.gz
+
+# ==========================================
+# Maven & Gradle Wrappers
+# ==========================================
+# Keep wrapper jar and properties so ./mvnw works for everyone
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+!/.mvn/wrapper/maven-wrapper.properties
+
+# ==========================================
+# IDEs & Editors Settings
+# ==========================================
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse / Spring Tool Suite (STS)
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +40,19 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# ==========================================
+# Operating System & Temp Files
+# ==========================================
+.DS_Store
+Thumbs.db
+HELP.md
