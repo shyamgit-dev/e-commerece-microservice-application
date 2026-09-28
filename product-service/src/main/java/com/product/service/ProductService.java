@@ -13,4 +13,5 @@ public interface ProductService {
     void deleteProduct(Long productId);
     List<ProductResponse> getInactiveProduct();
     void activateProduct(Long productId);
+    String patchQuantity(Long productId,Integer updateQuantity);
 }
