@@ -56,4 +56,12 @@ public class ProductController {
         String result = "Activated product having id "+productId;
         return ResponseEntity.ok(result);
     }
+
+    @PatchMapping("/{id}/{stock}")
+    public ResponseEntity<String> patchQuantity(@PathVariable("id") Long productId,
+                                                @PathVariable("stock") Integer quantity)
+    {
+        String result=productService.patchQuantity(productId,quantity);
+        return ResponseEntity.ok(result);
+    }
 }
