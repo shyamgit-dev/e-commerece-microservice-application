@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(name="product-service",url = "http://localhost:8081/api/products")
+@FeignClient(name="product-service")//,url = "http://localhost:8081/api/products")
 public interface ProductOpenClient {
 
-    @GetMapping
+    @GetMapping("/api/products")
     List<ProductResponse> fetchProductByIds(
             @RequestParam(name = "productIds", required = false) List<Long> productIds);
 
-    @PatchMapping("/{id}/{stock}")
+    @PatchMapping("/api/products/{id}/{stock}")
     String patchQuantity(@PathVariable("id") Long productId,
                          @PathVariable("stock") Integer quantity);
 }

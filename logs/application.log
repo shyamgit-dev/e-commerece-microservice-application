@@ -1,0 +1,652 @@
+2026-09-29T22:12:14.185+05:30  INFO 22304 --- [user-service] [restartedMain] com.user.UserServiceApplication          : Starting UserServiceApplication using Java 17.0.16 with PID 22304 (D:\E-Commerce-Microservices-App\user-service\target\classes started by HP in D:\E-Commerce-Microservices-App)
+2026-09-29T22:12:14.191+05:30 DEBUG 22304 --- [user-service] [restartedMain] com.user.UserServiceApplication          : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-09-29T22:12:14.193+05:30  INFO 22304 --- [user-service] [restartedMain] com.user.UserServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-29T22:12:14.444+05:30  INFO 22304 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-29T22:12:14.446+05:30  INFO 22304 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-29T22:12:15.865+05:30  INFO 22304 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-29T22:12:16.202+05:30  INFO 22304 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 307 ms. Found 1 JPA repository interface.
+2026-09-29T22:12:18.644+05:30  INFO 22304 --- [user-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-29T22:12:18.673+05:30  INFO 22304 --- [user-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-29T22:12:18.674+05:30  INFO 22304 --- [user-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-29T22:12:18.804+05:30  INFO 22304 --- [user-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4357 ms
+2026-09-29T22:12:19.472+05:30  INFO 22304 --- [user-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-29T22:12:19.850+05:30  INFO 22304 --- [user-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-29T22:12:21.400+05:30  INFO 22304 --- [user-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-29T22:12:21.479+05:30  INFO 22304 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-29T22:12:22.478+05:30  INFO 22304 --- [user-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@130c73a9
+2026-09-29T22:12:22.481+05:30  INFO 22304 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-29T22:12:22.709+05:30  WARN 22304 --- [user-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-29T22:12:22.767+05:30  INFO 22304 --- [user-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/userdb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.27
+	Default catalog/schema: userdb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-29T22:12:25.007+05:30  INFO 22304 --- [user-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-29T22:12:25.270+05:30  INFO 22304 --- [user-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T22:12:25.534+05:30  INFO 22304 --- [user-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-29T22:12:26.133+05:30  WARN 22304 --- [user-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-29T22:12:27.292+05:30  INFO 22304 --- [user-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-29T22:12:27.304+05:30  INFO 22304 --- [user-service] [restartedMain] com.user.UserServiceApplication          : Started UserServiceApplication in 14.236 seconds (process running for 16.007)
+2026-09-29T22:12:35.024+05:30  INFO 11092 --- [product-service] [restartedMain] com.product.ProductServiceApplication    : Starting ProductServiceApplication using Java 17.0.16 with PID 11092 (D:\E-Commerce-Microservices-App\product-service\target\classes started by HP in D:\E-Commerce-Microservices-App)
+2026-09-29T22:12:35.028+05:30 DEBUG 11092 --- [product-service] [restartedMain] com.product.ProductServiceApplication    : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-09-29T22:12:35.030+05:30  INFO 11092 --- [product-service] [restartedMain] com.product.ProductServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-09-29T22:12:35.188+05:30  INFO 11092 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-29T22:12:35.188+05:30  INFO 11092 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-29T22:12:36.728+05:30  INFO 11092 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-29T22:12:36.858+05:30  INFO 11092 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 1 JPA repository interface.
+2026-09-29T22:12:38.379+05:30  INFO 11092 --- [product-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-09-29T22:12:38.407+05:30  INFO 11092 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-29T22:12:38.407+05:30  INFO 11092 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-29T22:12:38.550+05:30  INFO 11092 --- [product-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3360 ms
+2026-09-29T22:12:38.987+05:30  INFO 11092 --- [product-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-29T22:12:39.102+05:30  INFO 11092 --- [product-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-29T22:12:39.968+05:30  INFO 11092 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-29T22:12:40.034+05:30  INFO 11092 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-29T22:12:40.634+05:30  INFO 11092 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d5a4fd1
+2026-09-29T22:12:40.637+05:30  INFO 11092 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-29T22:12:40.747+05:30  WARN 11092 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-29T22:12:40.800+05:30  INFO 11092 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/productdb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.27
+	Default catalog/schema: productdb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-29T22:12:42.626+05:30  INFO 11092 --- [product-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-29T22:12:42.768+05:30  INFO 11092 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T22:12:42.944+05:30  INFO 11092 --- [product-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-29T22:12:44.677+05:30  WARN 11092 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-29T22:12:45.382+05:30  INFO 11092 --- [product-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-09-29T22:12:45.395+05:30  INFO 11092 --- [product-service] [restartedMain] com.product.ProductServiceApplication    : Started ProductServiceApplication in 11.658 seconds (process running for 13.288)
+2026-09-29T22:12:55.901+05:30  INFO 26164 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Starting OrderServiceApplication using Java 17.0.16 with PID 26164 (D:\E-Commerce-Microservices-App\order-service\target\classes started by HP in D:\E-Commerce-Microservices-App)
+2026-09-29T22:12:55.905+05:30 DEBUG 26164 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-09-29T22:12:55.907+05:30  INFO 26164 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-09-29T22:12:56.075+05:30  INFO 26164 --- [order-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-29T22:12:56.077+05:30  INFO 26164 --- [order-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-29T22:12:57.546+05:30  INFO 26164 --- [order-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-29T22:12:57.675+05:30  INFO 26164 --- [order-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 2 JPA repository interfaces.
+2026-09-29T22:12:58.233+05:30  INFO 26164 --- [order-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=30120e0b-e340-33b1-aaef-cc5ccea9d2cc
+2026-09-29T22:12:59.260+05:30  INFO 26164 --- [order-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-09-29T22:12:59.324+05:30  INFO 26164 --- [order-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-29T22:12:59.326+05:30  INFO 26164 --- [order-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-29T22:12:59.640+05:30  INFO 26164 --- [order-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3561 ms
+2026-09-29T22:13:00.536+05:30  INFO 26164 --- [order-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-29T22:13:00.683+05:30  INFO 26164 --- [order-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-29T22:13:01.571+05:30  INFO 26164 --- [order-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-29T22:13:01.633+05:30  INFO 26164 --- [order-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-29T22:13:02.143+05:30  INFO 26164 --- [order-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59ce6f08
+2026-09-29T22:13:02.147+05:30  INFO 26164 --- [order-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-29T22:13:02.229+05:30  WARN 26164 --- [order-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-29T22:13:02.262+05:30  INFO 26164 --- [order-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/orderdb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.27
+	Default catalog/schema: orderdb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-29T22:13:04.076+05:30  INFO 26164 --- [order-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-29T22:13:04.209+05:30  INFO 26164 --- [order-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T22:13:04.383+05:30  INFO 26164 --- [order-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-29T22:13:05.046+05:30  WARN 26164 --- [order-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-29T22:13:06.462+05:30  INFO 26164 --- [order-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-09-29T22:13:06.703+05:30  INFO 26164 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Started OrderServiceApplication in 12.107 seconds (process running for 14.179)
+2026-09-29T22:13:50.827+05:30  INFO 26164 --- [order-service] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-29T22:13:50.828+05:30  INFO 26164 --- [order-service] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-29T22:13:50.833+05:30  INFO 26164 --- [order-service] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-09-29T22:13:51.514+05:30  INFO 22304 --- [user-service] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-29T22:13:51.516+05:30  INFO 22304 --- [user-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-29T22:13:51.520+05:30  INFO 22304 --- [user-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-09-29T22:13:51.673+05:30  INFO 22304 --- [user-service] [http-nio-8080-exec-1] com.user.service.Impl.UserServiceImpl    : Preparing to fetch userId
+2026-09-29T22:13:52.030+05:30  INFO 22304 --- [user-service] [http-nio-8080-exec-1] com.user.service.Impl.UserServiceImpl    : Fetched User with Id 2
+2026-09-29T22:13:52.489+05:30  INFO 26164 --- [order-service] [http-nio-8082-exec-2] c.order.service.Impl.OrderServiceImpl    : Communicated with user-service and fetched user ujwala
+2026-09-29T22:13:52.623+05:30  INFO 11092 --- [product-service] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-29T22:13:52.626+05:30  INFO 11092 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-29T22:13:52.632+05:30  INFO 11092 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-09-29T22:13:53.721+05:30  INFO 26164 --- [order-service] [http-nio-8082-exec-2] c.order.service.Impl.OrderServiceImpl    : Communicated with product-service and fetched product [ProductResponse(id=5, name=DELONGHI ESPRESSO MACHINE, description=AUTOMATIC COFFEE MAKER WITH MILK FROTHER, price=45000.00, active=true, stockQuantity=8, category=HOME APPLIANCES, averageRating=4.6)]
+2026-09-29T22:13:53.767+05:30  INFO 26164 --- [order-service] [http-nio-8082-exec-2] c.o.utility.GlobalExceptionalHandler     : Exception occurred at Invalid HTTP method: PATCH executing PATCH http://localhost:8081/api/products/5/1:/api/orders
+
+feign.RetryableException: Invalid HTTP method: PATCH executing PATCH http://localhost:8081/api/products/5/1
+	at feign.FeignException.errorExecuting(FeignException.java:300) ~[feign-core-13.6.1.jar:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:105) ~[feign-core-13.6.1.jar:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:53) ~[feign-core-13.6.1.jar:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:104) ~[feign-core-13.6.1.jar:na]
+	at jdk.proxy4/jdk.proxy4.$Proxy144.patchQuantity(Unknown Source) ~[na:na]
+	at com.order.service.Impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:105) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.9.jar:7.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.9.jar:7.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.9.jar:7.0.9]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.9.jar:7.0.9]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.9.jar:7.0.9]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.9.jar:7.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.9.jar:7.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.9.jar:7.0.9]
+	at com.order.service.Impl.OrderServiceImpl$$SpringCGLIB$$0.createOrder(<generated>) ~[classes/:na]
+	at com.order.controller.OrderController.addOrder(OrderController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.24.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.24.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59) ~[tomcat-embed-websocket-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.net.ProtocolException: Invalid HTTP method: PATCH
+	at java.base/java.net.HttpURLConnection.setRequestMethod(HttpURLConnection.java:489) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.setRequestMethod(HttpURLConnection.java:614) ~[na:na]
+	at feign.Client$Default.convertAndSend(Client.java:176) ~[feign-core-13.6.1.jar:na]
+	at feign.Client$Default.execute(Client.java:109) ~[feign-core-13.6.1.jar:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:92) ~[feign-core-13.6.1.jar:na]
+	... 63 common frames omitted
+
+2026-09-29T22:13:53.903+05:30  WARN 26164 --- [order-service] [http-nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [feign.RetryableException: Invalid HTTP method: PATCH executing PATCH http://localhost:8081/api/products/5/1]
+2026-09-29T22:20:41.574+05:30  INFO 26164 --- [order-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-29T22:20:41.634+05:30  INFO 26164 --- [order-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-29T22:20:41.648+05:30  INFO 26164 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T22:20:41.665+05:30  INFO 26164 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-29T22:20:41.698+05:30  INFO 26164 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-29T22:21:01.664+05:30  INFO 22844 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Starting OrderServiceApplication using Java 17.0.16 with PID 22844 (D:\E-Commerce-Microservices-App\order-service\target\classes started by HP in D:\E-Commerce-Microservices-App)
+2026-09-29T22:21:01.672+05:30 DEBUG 22844 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-09-29T22:21:01.674+05:30  INFO 22844 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-09-29T22:21:01.802+05:30  INFO 22844 --- [order-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-29T22:21:01.802+05:30  INFO 22844 --- [order-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-29T22:21:03.940+05:30  INFO 22844 --- [order-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-29T22:21:04.100+05:30  INFO 22844 --- [order-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 2 JPA repository interfaces.
+2026-09-29T22:21:04.589+05:30  INFO 22844 --- [order-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=30120e0b-e340-33b1-aaef-cc5ccea9d2cc
+2026-09-29T22:21:05.817+05:30  INFO 22844 --- [order-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-09-29T22:21:05.841+05:30  INFO 22844 --- [order-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-29T22:21:05.841+05:30  INFO 22844 --- [order-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-29T22:21:05.963+05:30  INFO 22844 --- [order-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4160 ms
+2026-09-29T22:21:06.495+05:30  INFO 22844 --- [order-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-29T22:21:06.658+05:30  INFO 22844 --- [order-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-29T22:21:07.603+05:30  INFO 22844 --- [order-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-29T22:21:07.667+05:30  INFO 22844 --- [order-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-29T22:21:08.336+05:30  INFO 22844 --- [order-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67011409
+2026-09-29T22:21:08.338+05:30  INFO 22844 --- [order-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-29T22:21:08.423+05:30  WARN 22844 --- [order-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-29T22:21:08.455+05:30  INFO 22844 --- [order-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/orderdb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.27
+	Default catalog/schema: orderdb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-29T22:21:09.930+05:30  INFO 22844 --- [order-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-29T22:21:10.058+05:30  INFO 22844 --- [order-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T22:21:10.230+05:30  INFO 22844 --- [order-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-29T22:21:10.944+05:30  WARN 22844 --- [order-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-29T22:21:12.627+05:30  INFO 22844 --- [order-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-09-29T22:21:12.930+05:30  INFO 22844 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Started OrderServiceApplication in 12.742 seconds (process running for 14.568)
+2026-09-29T22:21:21.730+05:30  INFO 22844 --- [order-service] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-29T22:21:21.731+05:30  INFO 22844 --- [order-service] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-29T22:21:21.734+05:30  INFO 22844 --- [order-service] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-09-29T22:21:22.480+05:30  INFO 22304 --- [user-service] [http-nio-8080-exec-4] com.user.service.Impl.UserServiceImpl    : Preparing to fetch userId
+2026-09-29T22:21:22.763+05:30  INFO 22304 --- [user-service] [http-nio-8080-exec-4] com.user.service.Impl.UserServiceImpl    : Fetched User with Id 2
+2026-09-29T22:21:23.009+05:30  INFO 22844 --- [order-service] [http-nio-8082-exec-2] c.order.service.Impl.OrderServiceImpl    : Communicated with user-service and fetched user ujwala
+2026-09-29T22:21:24.856+05:30  INFO 22844 --- [order-service] [http-nio-8082-exec-2] c.order.service.Impl.OrderServiceImpl    : Communicated with product-service and fetched product [ProductResponse(id=5, name=DELONGHI ESPRESSO MACHINE, description=AUTOMATIC COFFEE MAKER WITH MILK FROTHER, price=45000.00, active=true, stockQuantity=8, category=HOME APPLIANCES, averageRating=4.6)]
+2026-09-29T22:21:24.915+05:30  INFO 22844 --- [order-service] [http-nio-8082-exec-2] c.o.utility.GlobalExceptionalHandler     : Exception occurred at Invalid HTTP method: PATCH executing PATCH http://localhost:8081/api/products/5/1:/api/orders
+
+feign.RetryableException: Invalid HTTP method: PATCH executing PATCH http://localhost:8081/api/products/5/1
+	at feign.FeignException.errorExecuting(FeignException.java:300) ~[feign-core-13.6.1.jar:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:105) ~[feign-core-13.6.1.jar:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:53) ~[feign-core-13.6.1.jar:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:104) ~[feign-core-13.6.1.jar:na]
+	at jdk.proxy4/jdk.proxy4.$Proxy144.patchQuantity(Unknown Source) ~[na:na]
+	at com.order.service.Impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:105) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.9.jar:7.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.9.jar:7.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.9.jar:7.0.9]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.9.jar:7.0.9]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.9.jar:7.0.9]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.9.jar:7.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.9.jar:7.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.9.jar:7.0.9]
+	at com.order.service.Impl.OrderServiceImpl$$SpringCGLIB$$0.createOrder(<generated>) ~[classes/:na]
+	at com.order.controller.OrderController.addOrder(OrderController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.24.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.9.jar:7.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.24.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59) ~[tomcat-embed-websocket-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.9.jar:7.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74) ~[tomcat-embed-core-11.0.24.jar:11.0.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.net.ProtocolException: Invalid HTTP method: PATCH
+	at java.base/java.net.HttpURLConnection.setRequestMethod(HttpURLConnection.java:489) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.setRequestMethod(HttpURLConnection.java:614) ~[na:na]
+	at feign.Client$Default.convertAndSend(Client.java:176) ~[feign-core-13.6.1.jar:na]
+	at feign.Client$Default.execute(Client.java:109) ~[feign-core-13.6.1.jar:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:92) ~[feign-core-13.6.1.jar:na]
+	... 63 common frames omitted
+
+2026-09-29T22:21:25.074+05:30  WARN 22844 --- [order-service] [http-nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [feign.RetryableException: Invalid HTTP method: PATCH executing PATCH http://localhost:8081/api/products/5/1]
+2026-09-29T22:24:54.301+05:30  INFO 22844 --- [order-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-29T22:24:54.354+05:30  INFO 22844 --- [order-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-29T22:24:54.359+05:30  INFO 22844 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T22:24:54.364+05:30  INFO 22844 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-29T22:24:54.379+05:30  INFO 22844 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-29T22:25:13.037+05:30  INFO 25192 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Starting OrderServiceApplication using Java 17.0.16 with PID 25192 (D:\E-Commerce-Microservices-App\order-service\target\classes started by HP in D:\E-Commerce-Microservices-App)
+2026-09-29T22:25:13.056+05:30 DEBUG 25192 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-09-29T22:25:13.069+05:30  INFO 25192 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-09-29T22:25:13.299+05:30  INFO 25192 --- [order-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-29T22:25:13.300+05:30  INFO 25192 --- [order-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-29T22:25:14.921+05:30  INFO 25192 --- [order-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-29T22:25:15.053+05:30  INFO 25192 --- [order-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 2 JPA repository interfaces.
+2026-09-29T22:25:15.719+05:30  INFO 25192 --- [order-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c4408e78-4362-34ae-afaf-ec4a80cce75a
+2026-09-29T22:25:17.466+05:30  INFO 25192 --- [order-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-09-29T22:25:17.487+05:30  INFO 25192 --- [order-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-29T22:25:17.488+05:30  INFO 25192 --- [order-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-29T22:25:17.603+05:30  INFO 25192 --- [order-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4301 ms
+2026-09-29T22:25:17.963+05:30  INFO 25192 --- [order-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-29T22:25:18.208+05:30  INFO 25192 --- [order-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-29T22:25:19.376+05:30  INFO 25192 --- [order-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-29T22:25:19.438+05:30  INFO 25192 --- [order-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-29T22:25:20.160+05:30  INFO 25192 --- [order-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73ef6e4a
+2026-09-29T22:25:20.163+05:30  INFO 25192 --- [order-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-29T22:25:20.255+05:30  WARN 25192 --- [order-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-29T22:25:20.295+05:30  INFO 25192 --- [order-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/orderdb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.27
+	Default catalog/schema: orderdb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-29T22:25:21.961+05:30  INFO 25192 --- [order-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-29T22:25:22.113+05:30  INFO 25192 --- [order-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T22:25:22.332+05:30  INFO 25192 --- [order-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-29T22:25:23.090+05:30  WARN 25192 --- [order-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-29T22:25:25.296+05:30  INFO 25192 --- [order-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-09-29T22:25:25.688+05:30  INFO 25192 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Started OrderServiceApplication in 14.187 seconds (process running for 15.714)
+2026-09-29T22:25:33.015+05:30  INFO 25192 --- [order-service] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-29T22:25:33.015+05:30  INFO 25192 --- [order-service] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-29T22:25:33.019+05:30  INFO 25192 --- [order-service] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-09-29T22:25:33.630+05:30  INFO 22304 --- [user-service] [http-nio-8080-exec-6] com.user.service.Impl.UserServiceImpl    : Preparing to fetch userId
+2026-09-29T22:25:33.653+05:30  INFO 22304 --- [user-service] [http-nio-8080-exec-6] com.user.service.Impl.UserServiceImpl    : Fetched User with Id 2
+2026-09-29T22:25:33.720+05:30  INFO 25192 --- [order-service] [http-nio-8082-exec-1] c.order.service.Impl.OrderServiceImpl    : Communicated with user-service and fetched user ujwala
+2026-09-29T22:25:33.805+05:30  INFO 25192 --- [order-service] [http-nio-8082-exec-1] c.order.service.Impl.OrderServiceImpl    : Communicated with product-service and fetched product [ProductResponse(id=5, name=DELONGHI ESPRESSO MACHINE, description=AUTOMATIC COFFEE MAKER WITH MILK FROTHER, price=45000.00, active=true, stockQuantity=8, category=HOME APPLIANCES, averageRating=4.6)]
+2026-09-29T23:06:08.431+05:30  INFO 25192 --- [order-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-29T23:06:08.539+05:30  INFO 25192 --- [order-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-29T23:06:08.585+05:30  INFO 25192 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T23:06:08.655+05:30  INFO 25192 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-29T23:06:08.681+05:30  INFO 25192 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-29T23:06:25.769+05:30  INFO 4296 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Starting OrderServiceApplication using Java 17.0.16 with PID 4296 (D:\E-Commerce-Microservices-App\order-service\target\classes started by HP in D:\E-Commerce-Microservices-App)
+2026-09-29T23:06:25.776+05:30 DEBUG 4296 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-09-29T23:06:25.777+05:30  INFO 4296 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-09-29T23:06:25.954+05:30  INFO 4296 --- [order-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-29T23:06:25.954+05:30  INFO 4296 --- [order-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-29T23:06:27.830+05:30  INFO 4296 --- [order-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-29T23:06:28.200+05:30  INFO 4296 --- [order-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 342 ms. Found 2 JPA repository interfaces.
+2026-09-29T23:06:28.895+05:30  INFO 4296 --- [order-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=283fa195-547e-3f29-88f1-d7d3af561a35
+2026-09-29T23:06:31.120+05:30  INFO 4296 --- [order-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-09-29T23:06:31.151+05:30  INFO 4296 --- [order-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-29T23:06:31.152+05:30  INFO 4296 --- [order-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-29T23:06:31.320+05:30  INFO 4296 --- [order-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 5365 ms
+2026-09-29T23:06:31.799+05:30  INFO 4296 --- [order-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-29T23:06:31.927+05:30  INFO 4296 --- [order-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-29T23:06:32.896+05:30  INFO 4296 --- [order-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-29T23:06:32.946+05:30  INFO 4296 --- [order-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-29T23:06:33.548+05:30  INFO 4296 --- [order-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40bc21a
+2026-09-29T23:06:33.551+05:30  INFO 4296 --- [order-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-29T23:06:33.716+05:30  WARN 4296 --- [order-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-29T23:06:33.740+05:30  INFO 4296 --- [order-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/orderdb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.27
+	Default catalog/schema: orderdb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-29T23:06:35.417+05:30  INFO 4296 --- [order-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-29T23:06:35.622+05:30  INFO 4296 --- [order-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T23:06:35.782+05:30  INFO 4296 --- [order-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-29T23:06:36.461+05:30  WARN 4296 --- [order-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-29T23:06:38.447+05:30  INFO 4296 --- [order-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-09-29T23:06:38.498+05:30  WARN 4296 --- [order-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-29T23:06:38.547+05:30  INFO 4296 --- [order-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-09-29T23:06:38.593+05:30  INFO 4296 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-09-29T23:06:38.598+05:30  INFO 4296 --- [order-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-29T23:06:38.619+05:30  INFO 4296 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-29T23:06:38.619+05:30  INFO 4296 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-29T23:06:38.619+05:30  INFO 4296 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-29T23:06:38.620+05:30  INFO 4296 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-29T23:06:38.620+05:30  INFO 4296 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-29T23:06:38.620+05:30  INFO 4296 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-09-29T23:06:38.620+05:30  INFO 4296 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-29T23:06:39.621+05:30  INFO 4296 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-29T23:06:39.624+05:30  INFO 4296 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-09-29T23:06:39.626+05:30  INFO 4296 --- [order-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-29T23:06:39.628+05:30  INFO 4296 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1790703399627 with initial instances count: 0
+2026-09-29T23:06:39.632+05:30  INFO 4296 --- [order-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2026-09-29T23:06:39.632+05:30  INFO 4296 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1790703399632, current=UP, previous=STARTING]
+2026-09-29T23:06:39.634+05:30  INFO 4296 --- [order-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/LAPTOP-O2HKDEMC:order-service:8082: registering service...
+2026-09-29T23:06:39.675+05:30  INFO 4296 --- [order-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-09-29T23:06:39.679+05:30  INFO 4296 --- [order-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-09-29T23:06:39.987+05:30  INFO 4296 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Started OrderServiceApplication in 15.635 seconds (process running for 17.709)
+2026-09-29T23:06:40.087+05:30  INFO 4296 --- [order-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/LAPTOP-O2HKDEMC:order-service:8082 - registration status: 204
+2026-09-29T23:07:09.627+05:30  INFO 4296 --- [order-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-29T23:07:09.627+05:30  INFO 4296 --- [order-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-29T23:07:09.628+05:30  INFO 4296 --- [order-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-29T23:07:09.629+05:30  INFO 4296 --- [order-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-29T23:07:09.629+05:30  INFO 4296 --- [order-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-29T23:07:09.629+05:30  INFO 4296 --- [order-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-09-29T23:07:09.629+05:30  INFO 4296 --- [order-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-29T23:07:09.665+05:30  INFO 4296 --- [order-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-29T23:08:00.237+05:30  INFO 22304 --- [user-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-29T23:08:00.353+05:30  INFO 22304 --- [user-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-29T23:08:00.442+05:30  INFO 22304 --- [user-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T23:08:00.559+05:30  INFO 22304 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-29T23:08:00.575+05:30  INFO 22304 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-29T23:08:06.783+05:30  INFO 11092 --- [product-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-29T23:08:06.970+05:30  INFO 11092 --- [product-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-29T23:08:07.101+05:30  INFO 11092 --- [product-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T23:08:07.296+05:30  INFO 11092 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-29T23:08:07.346+05:30  INFO 11092 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-29T23:08:16.357+05:30  INFO 24308 --- [user-service] [restartedMain] com.user.UserServiceApplication          : Starting UserServiceApplication using Java 17.0.16 with PID 24308 (D:\E-Commerce-Microservices-App\user-service\target\classes started by HP in D:\E-Commerce-Microservices-App)
+2026-09-29T23:08:16.364+05:30 DEBUG 24308 --- [user-service] [restartedMain] com.user.UserServiceApplication          : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-09-29T23:08:16.366+05:30  INFO 24308 --- [user-service] [restartedMain] com.user.UserServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-29T23:08:16.660+05:30  INFO 24308 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-29T23:08:16.661+05:30  INFO 24308 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-29T23:08:18.622+05:30  INFO 24308 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-29T23:08:19.034+05:30  INFO 24308 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 363 ms. Found 1 JPA repository interface.
+2026-09-29T23:08:19.690+05:30  INFO 24308 --- [user-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=623051df-7b97-34ea-b25e-b82a9ac557d5
+2026-09-29T23:08:20.964+05:30  INFO 24308 --- [user-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-29T23:08:21.008+05:30  INFO 24308 --- [user-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-29T23:08:21.009+05:30  INFO 24308 --- [user-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-29T23:08:21.246+05:30  INFO 24308 --- [user-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4585 ms
+2026-09-29T23:08:21.709+05:30  INFO 24308 --- [user-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-29T23:08:21.850+05:30  INFO 24308 --- [user-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-29T23:08:22.993+05:30  INFO 24308 --- [user-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-29T23:08:23.082+05:30  INFO 24308 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-29T23:08:23.970+05:30  INFO 24308 --- [user-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53570343
+2026-09-29T23:08:23.974+05:30  INFO 24308 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-29T23:08:24.103+05:30  WARN 24308 --- [user-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-29T23:08:24.163+05:30  INFO 24308 --- [user-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/userdb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.27
+	Default catalog/schema: userdb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-29T23:08:26.555+05:30  INFO 24308 --- [user-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-29T23:08:26.677+05:30  INFO 24308 --- [user-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T23:08:26.906+05:30  INFO 24308 --- [user-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-29T23:08:27.454+05:30  WARN 24308 --- [user-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-29T23:08:29.301+05:30  INFO 24308 --- [user-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-09-29T23:08:29.441+05:30  WARN 24308 --- [user-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-29T23:08:29.542+05:30  INFO 24308 --- [user-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-09-29T23:08:29.601+05:30  INFO 24308 --- [user-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-09-29T23:08:29.611+05:30  INFO 24308 --- [user-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-29T23:08:29.630+05:30  INFO 24308 --- [user-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-29T23:08:29.631+05:30  INFO 24308 --- [user-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-29T23:08:29.632+05:30  INFO 24308 --- [user-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-29T23:08:29.632+05:30  INFO 24308 --- [user-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-29T23:08:29.632+05:30  INFO 24308 --- [user-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-29T23:08:29.632+05:30  INFO 24308 --- [user-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-09-29T23:08:29.633+05:30  INFO 24308 --- [user-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-29T23:08:30.423+05:30  INFO 24308 --- [user-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-29T23:08:30.427+05:30  INFO 24308 --- [user-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-09-29T23:08:30.432+05:30  INFO 24308 --- [user-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-29T23:08:30.437+05:30  INFO 24308 --- [user-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1790703510434 with initial instances count: 1
+2026-09-29T23:08:30.444+05:30  INFO 24308 --- [user-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-SERVICE with eureka with status UP
+2026-09-29T23:08:30.446+05:30  INFO 24308 --- [user-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1790703510446, current=UP, previous=STARTING]
+2026-09-29T23:08:30.449+05:30  INFO 24308 --- [user-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/LAPTOP-O2HKDEMC:user-service:8080: registering service...
+2026-09-29T23:08:30.508+05:30  INFO 24308 --- [user-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-29T23:08:30.511+05:30  INFO 24308 --- [user-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-09-29T23:08:30.549+05:30  INFO 24308 --- [user-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/LAPTOP-O2HKDEMC:user-service:8080 - registration status: 204
+2026-09-29T23:08:30.956+05:30  INFO 24308 --- [user-service] [restartedMain] com.user.UserServiceApplication          : Started UserServiceApplication in 16.12 seconds (process running for 18.545)
+2026-09-29T23:08:39.677+05:30  INFO 22848 --- [product-service] [restartedMain] com.product.ProductServiceApplication    : Starting ProductServiceApplication using Java 17.0.16 with PID 22848 (D:\E-Commerce-Microservices-App\product-service\target\classes started by HP in D:\E-Commerce-Microservices-App)
+2026-09-29T23:08:39.684+05:30 DEBUG 22848 --- [product-service] [restartedMain] com.product.ProductServiceApplication    : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-09-29T23:08:39.686+05:30  INFO 22848 --- [product-service] [restartedMain] com.product.ProductServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-09-29T23:08:39.869+05:30  INFO 22848 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-29T23:08:39.871+05:30  INFO 22848 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-29T23:08:41.516+05:30  INFO 22848 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-29T23:08:41.787+05:30  INFO 22848 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 252 ms. Found 1 JPA repository interface.
+2026-09-29T23:08:42.280+05:30  INFO 22848 --- [product-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=734f3a52-3ee0-3f72-9fb5-660e346ac402
+2026-09-29T23:08:43.529+05:30  INFO 22848 --- [product-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-09-29T23:08:43.562+05:30  INFO 22848 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-29T23:08:43.562+05:30  INFO 22848 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-29T23:08:43.702+05:30  INFO 22848 --- [product-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3829 ms
+2026-09-29T23:08:43.991+05:30  INFO 22848 --- [product-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-29T23:08:44.076+05:30  INFO 22848 --- [product-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-29T23:08:44.790+05:30  INFO 22848 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-29T23:08:44.832+05:30  INFO 22848 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-29T23:08:45.235+05:30  INFO 22848 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52c8691c
+2026-09-29T23:08:45.237+05:30  INFO 22848 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-29T23:08:45.314+05:30  WARN 22848 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-29T23:08:45.338+05:30  INFO 22848 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/productdb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.27
+	Default catalog/schema: productdb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-29T23:08:47.160+05:30  INFO 22848 --- [product-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-29T23:08:47.256+05:30  INFO 22848 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T23:08:47.389+05:30  INFO 22848 --- [product-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-29T23:08:49.481+05:30  WARN 22848 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-29T23:08:50.911+05:30  INFO 22848 --- [product-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-09-29T23:08:50.994+05:30  WARN 22848 --- [product-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-29T23:08:51.036+05:30  INFO 22848 --- [product-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-09-29T23:08:51.083+05:30  INFO 22848 --- [product-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-09-29T23:08:51.088+05:30  INFO 22848 --- [product-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-29T23:08:51.106+05:30  INFO 22848 --- [product-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-29T23:08:51.107+05:30  INFO 22848 --- [product-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-29T23:08:51.107+05:30  INFO 22848 --- [product-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-29T23:08:51.107+05:30  INFO 22848 --- [product-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-29T23:08:51.107+05:30  INFO 22848 --- [product-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-29T23:08:51.107+05:30  INFO 22848 --- [product-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-09-29T23:08:51.107+05:30  INFO 22848 --- [product-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-29T23:08:51.869+05:30  INFO 22848 --- [product-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-29T23:08:51.873+05:30  INFO 22848 --- [product-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-09-29T23:08:51.878+05:30  INFO 22848 --- [product-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-29T23:08:51.883+05:30  INFO 22848 --- [product-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1790703531881 with initial instances count: 1
+2026-09-29T23:08:51.889+05:30  INFO 22848 --- [product-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-SERVICE with eureka with status UP
+2026-09-29T23:08:51.890+05:30  INFO 22848 --- [product-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1790703531890, current=UP, previous=STARTING]
+2026-09-29T23:08:51.893+05:30  INFO 22848 --- [product-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/LAPTOP-O2HKDEMC:product-service:8081: registering service...
+2026-09-29T23:08:51.951+05:30  INFO 22848 --- [product-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-09-29T23:08:51.953+05:30  INFO 22848 --- [product-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-09-29T23:08:51.986+05:30  INFO 22848 --- [product-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/LAPTOP-O2HKDEMC:product-service:8081 - registration status: 204
+2026-09-29T23:08:52.173+05:30  INFO 22848 --- [product-service] [restartedMain] com.product.ProductServiceApplication    : Started ProductServiceApplication in 13.887 seconds (process running for 15.765)
+2026-09-29T23:11:38.630+05:30  INFO 4296 --- [order-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-29T23:12:36.086+05:30  INFO 4296 --- [order-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDER-SERVICE with eureka with status DOWN
+2026-09-29T23:12:36.086+05:30  INFO 4296 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1790703756086, current=DOWN, previous=UP]
+2026-09-29T23:12:36.087+05:30  INFO 4296 --- [order-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/LAPTOP-O2HKDEMC:order-service:8082: registering service...
+2026-09-29T23:12:36.109+05:30  INFO 4296 --- [order-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/LAPTOP-O2HKDEMC:order-service:8082 - registration status: 204
+2026-09-29T23:12:36.145+05:30  INFO 4296 --- [order-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-29T23:12:36.225+05:30  INFO 4296 --- [order-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-29T23:12:36.251+05:30  INFO 4296 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T23:12:36.301+05:30  INFO 4296 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-29T23:12:36.350+05:30  INFO 4296 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-29T23:12:36.351+05:30  INFO 4296 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-09-29T23:12:39.354+05:30  INFO 4296 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-09-29T23:12:39.389+05:30  INFO 4296 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/LAPTOP-O2HKDEMC:order-service:8082 - deregister  status: 200
+2026-09-29T23:12:39.389+05:30  INFO 4296 --- [order-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-09-29T23:13:29.643+05:30  INFO 24308 --- [user-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-29T23:13:51.119+05:30  INFO 22848 --- [product-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-29T23:13:57.998+05:30  INFO 23236 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Starting OrderServiceApplication using Java 17.0.16 with PID 23236 (D:\E-Commerce-Microservices-App\order-service\target\classes started by HP in D:\E-Commerce-Microservices-App)
+2026-09-29T23:13:58.002+05:30 DEBUG 23236 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-09-29T23:13:58.005+05:30  INFO 23236 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-09-29T23:13:58.138+05:30  INFO 23236 --- [order-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-29T23:13:58.139+05:30  INFO 23236 --- [order-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-29T23:13:59.555+05:30  INFO 23236 --- [order-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-29T23:13:59.800+05:30  INFO 23236 --- [order-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 228 ms. Found 2 JPA repository interfaces.
+2026-09-29T23:14:00.354+05:30  INFO 23236 --- [order-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=283fa195-547e-3f29-88f1-d7d3af561a35
+2026-09-29T23:14:01.970+05:30  INFO 23236 --- [order-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-09-29T23:14:02.011+05:30  INFO 23236 --- [order-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-29T23:14:02.011+05:30  INFO 23236 --- [order-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-29T23:14:02.349+05:30  INFO 23236 --- [order-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4209 ms
+2026-09-29T23:14:03.433+05:30  INFO 23236 --- [order-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-29T23:14:03.575+05:30  INFO 23236 --- [order-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-29T23:14:05.339+05:30  INFO 23236 --- [order-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-29T23:14:05.457+05:30  INFO 23236 --- [order-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-29T23:14:06.602+05:30  INFO 23236 --- [order-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e3fee18
+2026-09-29T23:14:06.606+05:30  INFO 23236 --- [order-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-29T23:14:06.738+05:30  WARN 23236 --- [order-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-29T23:14:06.919+05:30  INFO 23236 --- [order-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/orderdb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.27
+	Default catalog/schema: orderdb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-29T23:14:11.040+05:30  INFO 23236 --- [order-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-29T23:14:11.264+05:30  INFO 23236 --- [order-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T23:14:11.593+05:30  INFO 23236 --- [order-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-29T23:14:13.198+05:30  WARN 23236 --- [order-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-29T23:14:14.567+05:30  INFO 23236 --- [order-service] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+2026-09-29T23:14:14.942+05:30  INFO 23236 --- [order-service] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'product-service' URL not provided. Will try picking an instance via load-balancing.
+2026-09-29T23:14:17.331+05:30  INFO 23236 --- [order-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-09-29T23:14:17.412+05:30  WARN 23236 --- [order-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-29T23:14:17.490+05:30  INFO 23236 --- [order-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-09-29T23:14:17.567+05:30  INFO 23236 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-09-29T23:14:17.580+05:30  INFO 23236 --- [order-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-29T23:14:17.605+05:30  INFO 23236 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-29T23:14:17.606+05:30  INFO 23236 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-29T23:14:17.606+05:30  INFO 23236 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-29T23:14:17.606+05:30  INFO 23236 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-29T23:14:17.606+05:30  INFO 23236 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-29T23:14:17.606+05:30  INFO 23236 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-09-29T23:14:17.606+05:30  INFO 23236 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-29T23:14:18.282+05:30  INFO 23236 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-29T23:14:18.287+05:30  INFO 23236 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-09-29T23:14:18.291+05:30  INFO 23236 --- [order-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-29T23:14:18.295+05:30  INFO 23236 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1790703858292 with initial instances count: 2
+2026-09-29T23:14:18.312+05:30  INFO 23236 --- [order-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2026-09-29T23:14:18.315+05:30  INFO 23236 --- [order-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1790703858315, current=UP, previous=STARTING]
+2026-09-29T23:14:18.322+05:30  INFO 23236 --- [order-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/LAPTOP-O2HKDEMC:order-service:8082: registering service...
+2026-09-29T23:14:18.427+05:30  INFO 23236 --- [order-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/LAPTOP-O2HKDEMC:order-service:8082 - registration status: 204
+2026-09-29T23:14:18.582+05:30  INFO 23236 --- [order-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-09-29T23:14:18.585+05:30  INFO 23236 --- [order-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-09-29T23:14:18.892+05:30  INFO 23236 --- [order-service] [restartedMain] com.order.OrderServiceApplication        : Started OrderServiceApplication in 22.02 seconds (process running for 23.548)
+2026-09-29T23:14:41.106+05:30  INFO 24308 --- [user-service] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-29T23:14:41.109+05:30  INFO 24308 --- [user-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-29T23:14:41.232+05:30  INFO 24308 --- [user-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 122 ms
+2026-09-29T23:14:41.648+05:30  INFO 24308 --- [user-service] [http-nio-8080-exec-1] com.user.service.Impl.UserServiceImpl    : Preparing to fetch userId
+2026-09-29T23:14:42.151+05:30  INFO 24308 --- [user-service] [http-nio-8080-exec-1] com.user.service.Impl.UserServiceImpl    : Fetched User with Id 3

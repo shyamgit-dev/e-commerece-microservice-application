@@ -29,4 +29,10 @@ logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
 
+#Discovery Server Endpoint
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
 
