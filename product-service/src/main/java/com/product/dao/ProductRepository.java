@@ -24,4 +24,11 @@ public interface ProductRepository extends JpaRepository<Product,Long> {
     @Transactional
     @Query(value = "UPDATE Product SET is_active=true WHERE id= :productId",nativeQuery = true)
     void restoreProductById(@Param("productId") Long productId);
+
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE Product p SET p.stockQuantity=p.stockQuantity- :stock "+
+           "WHERE p.id=:id and p.stockQuantity>=:stock"
+    )
+    int decrementQuantity(@Param("id") Long productId,@Param("stock") Integer stock);
 }

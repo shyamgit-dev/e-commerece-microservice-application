@@ -83,4 +83,13 @@ public class ProductServiceImpl implements ProductService {
                 );
         productRepository.restoreProductById(productId);
     }
+
+    @Override
+    public String patchQuantity(Long productId,Integer updateQuantity) {
+        Product product = productRepository.findById(productId)
+                .orElseThrow(()->new ProductNotFoundException("Product with given Id not found"));
+        int updated = productRepository.decrementQuantity(productId,updateQuantity);
+        if(updated>0) return"Product Quantity is updated having Id "+product.getId();
+        return "No row updated";
+    }
 }
