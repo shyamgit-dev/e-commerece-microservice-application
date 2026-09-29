@@ -8,6 +8,8 @@ import com.order.exception.InvalidOrderCreationException;
 import com.order.exception.OrderNotFoundException;
 import com.order.model.OrderItem;
 import com.order.model.Orders;
+import com.order.openfeign.ProductOpenClient;
+import com.order.openfeign.UserOpenClient;
 import com.order.service.OrderService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -33,8 +35,15 @@ public class OrderServiceImpl implements OrderService {
     private final OrderRepository orderRepository;
     private final OrderItemRepository orderItemRepository;
     private final ModelMapper modelMapper;
+
+    //RESTCLIENT
     private final RestClient userClient;
     private final RestClient productClient;
+
+    //OPENFEIGN
+    private final UserOpenClient userOpenClient;
+    private final ProductOpenClient productOpenClient;
+
 
     @Transactional
     @Override
@@ -44,7 +53,8 @@ public class OrderServiceImpl implements OrderService {
             throw new InvalidOrderCreationException("At least one item is required for placing order");
         }
 
-        UserResponse userResponse = fetchUserById(orderRequest.getUserId());
+        //UserResponse userResponse = fetchUserById(orderRequest.getUserId());
+        UserResponse userResponse = userOpenClient.fetchUserById(orderRequest.getUserId());
 
         log.info("Communicated with user-service and fetched user {}",
                 userResponse.getUsername());
@@ -55,7 +65,8 @@ public class OrderServiceImpl implements OrderService {
                 .distinct()
                 .toList();
 
-        List<ProductResponse> productResponseList = fetchProductByIds(productIds);
+        //List<ProductResponse> productResponseList = fetchProductByIds(productIds);
+        List<ProductResponse> productResponseList = productOpenClient.fetchProductByIds(productIds);
 
         log.info("Communicated with product-service and fetched product {}",
                 productResponseList);
@@ -90,7 +101,8 @@ public class OrderServiceImpl implements OrderService {
             if(itemRequest.getQuantity()> product.getStockQuantity())
                 throw new InvalidOrderCreationException("Entered quantity is greater than the stock quantity");
 
-            updateStock(product.getId(), itemRequest.getQuantity());
+            //updateStock(product.getId(), itemRequest.getQuantity());
+            productOpenClient.patchQuantity(product.getId(), itemRequest.getQuantity());
 
             orderItem.setQuantity(itemRequest.getQuantity());
             orderItem.setOrders(order);
