@@ -1,0 +1,58 @@
+# ==========================================
+# Build Outputs & Compiled Binaries
+# ==========================================
+**/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# ==========================================
+# Application Logs (All Microservices)
+# ==========================================
+**/logs/
+*.log
+*.gz
+
+# ==========================================
+# Maven & Gradle Wrappers
+# ==========================================
+# Keep wrapper jar and properties so ./mvnw works for everyone
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+!/.mvn/wrapper/maven-wrapper.properties
+
+# ==========================================
+# IDEs & Editors Settings
+# ==========================================
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse / Spring Tool Suite (STS)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# ==========================================
+# Operating System & Temp Files
+# ==========================================
+.DS_Store
+Thumbs.db
+HELP.md

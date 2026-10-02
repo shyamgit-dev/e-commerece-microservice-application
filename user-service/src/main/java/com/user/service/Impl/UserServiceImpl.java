@@ -10,6 +10,7 @@ import com.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -23,6 +24,8 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 
     private final ModelMapper modelMapper;
+
+    private final Environment environment;
 
     @Override
     public UserResponse createUser(UserRequest request) {
@@ -57,6 +60,8 @@ public class UserServiceImpl implements UserService {
         User user = userRepository.findById(userId)
                 .orElseThrow(()->new UserNotFoundException("User Not Found"));
         log.info("Fetched User with Id {}",user.getUserId());
+        log.info("Request handled by User Service on port {}",
+                environment.getProperty("local.server.port"));
         return modelMapper.map(user, UserResponse.class);
     }
 
