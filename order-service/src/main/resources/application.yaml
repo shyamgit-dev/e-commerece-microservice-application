@@ -35,4 +35,14 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
+#Circuit Breaker Properties
+resilience4j:
+  circuitbreaker:
+    instances:
+      userService:
+        slidingWindowSize: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 2
+
 

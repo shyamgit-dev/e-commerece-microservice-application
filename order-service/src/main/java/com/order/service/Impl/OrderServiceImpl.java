@@ -11,6 +11,9 @@ import com.order.model.Orders;
 import com.order.openfeign.ProductOpenClient;
 import com.order.openfeign.UserOpenClient;
 import com.order.service.OrderService;
+import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import jakarta.annotation.PostConstruct;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -44,6 +47,43 @@ public class OrderServiceImpl implements OrderService {
     private final UserOpenClient userOpenClient;
     private final ProductOpenClient productOpenClient;
 
+    private final CircuitBreakerRegistry circuitBreakerRegistry;
+
+    private final UserClientServiceImpl clientService;
+
+/*    @CircuitBreaker(name = "userService",fallbackMethod = "userServiceFallback")
+    public UserResponse getUserById(Long userId)
+    {
+         return userOpenClient.fetchUserById(userId);
+    }
+
+    public UserResponse userServiceFallback(Long userId,Throwable throwable)
+    {
+        log.warn("User service is temporarily Unavailable please try again later {}",
+                throwable.getMessage()
+                );
+        return null;
+    }*/
+
+    @PostConstruct
+    public void monitorCircuitBreaker()
+    {
+        io.github.resilience4j.circuitbreaker.CircuitBreaker circuitBreaker =
+                circuitBreakerRegistry.circuitBreaker("userService");
+
+        log.info("Circuit breaker Initialized current state is {}",
+                circuitBreaker.getState()
+                );
+
+        circuitBreaker.getEventPublisher()
+                .onStateTransition(event -> {
+                    log.info("Circuit State Changed from {} to {}",
+                            circuitBreaker.getState(),
+                            event.getStateTransition()
+                            );
+                });
+    }
+
 
     @Transactional
     @Override
@@ -54,7 +94,9 @@ public class OrderServiceImpl implements OrderService {
         }
 
         //UserResponse userResponse = fetchUserById(orderRequest.getUserId());
-        UserResponse userResponse = userOpenClient.fetchUserById(orderRequest.getUserId());
+        UserResponse userResponse = clientService.getUserById(orderRequest.getUserId());
+
+        if(userResponse==null) throw  new InvalidOrderCreationException("User service is temporarily down");
 
         log.info("Communicated with user-service and fetched user {}",
                 userResponse.getUsername());
@@ -144,6 +186,7 @@ public class OrderServiceImpl implements OrderService {
 
     }
 
+    //REST CLIENT SYNCHRONOUS HTTP CLIENT
     private void updateStock(Long productId,Integer updateQuantity)
     {
         String response=productClient.patch()
